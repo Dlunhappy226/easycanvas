@@ -24,3 +24,6 @@ class canvas():
 
     def file_choose(self):
         return tkinter.filedialog.askopenfilename()
+
+    def event(self, key, function):
+        self.canvas.bind(key, function)
